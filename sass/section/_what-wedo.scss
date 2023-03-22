@@ -1,0 +1,42 @@
+.what-we-do{
+    padding-top: 0;
+}
+.what-we-do__tittle{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+    margin-bottom: 50px;
+}
+ .what-we-do__items{
+    display: flex;
+ }
+
+.what-we-do__item{
+    display: flex; 
+    position: relative; 
+}
+
+.what-we-do__overlay{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height:calc(14/16.41);
+    letter-spacing: 0.03em;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding: 27px 132px;
+}
+
+.what-we-do__item:not(:last-child){
+    margin-right: 30px;
+}

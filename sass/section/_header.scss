@@ -1,0 +1,36 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-cont{
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    position: absolute ;
+}
+.nav{
+    margin-left: 97px;
+    display: flex;
+}
+.nav__item:not(:last-child){
+    margin-right: 53px;
+}
+.contact{
+    display: flex;
+    margin-left:auto ;
+}
+.contact__header:not(:last-child){
+    margin-right: 50px;
+}
+.header-svg-fill{
+    fill: currentColor;
+}
+.header-svg-fill{
+    margin-right: 10px;
+}
+.header-svg-fill:hover{
+    fill: #2196F3;
+}
