@@ -25,12 +25,12 @@
 .contact__header:not(:last-child){
     margin-right: 50px;
 }
+
 .header-svg-fill{
     fill: currentColor;
-}
-.header-svg-fill{
     margin-right: 10px;
+    &:hover{
+        fill: #2196F3;
+    }
 }
-.header-svg-fill:hover{
-    fill: #2196F3;
-}
+

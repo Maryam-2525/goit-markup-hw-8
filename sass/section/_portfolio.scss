@@ -51,19 +51,23 @@
     border-left:1px solid #eee ;
     border-right:1px solid #eee;
 }
-.cards__list:hover,
-.cards__list:focus{
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.12),
-     0px 4px 4px rgba(0, 0, 0, 0.06),
-     1px 4px 6px rgba(0, 0, 0, 0.16);
+.cards__list{
+    &:hover,
+    &:focus{
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
    
+    }
+    &:hover .cards__ovarlay,
+    &:focus .cards__ovarlay{
+        cursor: pointer;
+        transform: translateY(0);
+    }
 }
 
-.cards__list:hover .cards__ovarlay,
-.cards__list:focus .cards__ovarlay{
-    cursor: pointer;
-    transform: translateY(0);
-}
+
+
 
 .cards__item{
     position: relative;

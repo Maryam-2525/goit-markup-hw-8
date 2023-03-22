@@ -11,12 +11,13 @@
     transition-property:color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:focus,
+    &:hover{
+        color: $other-color;
+    }
 }
 
-.nav__lnk:focus,
-.nav__lnk:hover{
-    color: $other-color;
-}
+
 .nav__lnk--active{
     color: $other-color;
 }
@@ -45,10 +46,11 @@
     transition-property:color ;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-.contact__header-lnk:hover,
-.contact__header-lnk:focus{
-    color: $other-color;
+    &:hover,
+    &:focus{
+        color: $other-color;
+    }
+
 }
 
 
@@ -64,12 +66,13 @@
     transition-property:color, background-color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:hover{
+        background-color: #2196F3;
+        color: #ffffff;
+    }
 }
 
-.team__circle:hover{
-    background-color: #2196F3;
-    color: #ffffff;
-}
+
 
 
 .address__lnk{
@@ -104,13 +107,14 @@
     transition-property:color, border-color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:hover,
+    &:focus{
+        border-color: #2196F3;
+         color: #2196f3;
+    } 
 }
  
-.regular__rectangle:hover,
-.regular__rectangle:focus{
-   border-color: #2196F3;
-   color: #2196f3;
-} 
+
 .socialmedia__circle{
     background-color: #212121;
     border-radius: 50%;
@@ -123,8 +127,8 @@
     transition-property:background-color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:hover{
+        background-color: #2196F3;
+    }
+    
 }
-.socialmedia__circle:hover{
-    background-color: #2196F3;
-}
-

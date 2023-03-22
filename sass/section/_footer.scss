@@ -87,13 +87,14 @@
     border: 1px solid #757575;
     border-radius: 4px;
     margin-right: 12px;
+    &:hover,
+    &:focus{
+       outline: none;
+       border-color: #2196F3;
+    }
 }
 
-.form__input:hover,
-.form__input:focus{
-    outline: none;
-    border-color: #2196F3;
-}
+
 
 .form__input::placeholder{
     font-family: "roboto";

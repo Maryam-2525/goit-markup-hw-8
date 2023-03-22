@@ -86,18 +86,20 @@
     padding: 11px 0 11px 40px;
     outline: none;    
     font-family: "roboto";
+    &:hover,
+    &:focus{
+       border-color: #2196f3;
+       outline: none;
+    }
+    &:hover + .modal-svg,
+    &:focus + .modal-svg{
+        fill: #2196F3;
 }
 
-.modal__input:hover,
-.modal__input:focus{
-    border-color: #2196f3;
-    outline: none;
 }
 
-.modal__input:hover + .modal-svg,
-.modal__input:focus + .modal-svg{
-    fill: #2196F3;
-}
+
+
 
 
 .modal-svg{
@@ -121,14 +123,12 @@
     font-weight: 400;
     line-height: calc(14.06/12);
     color: #757575;
+    &:focus{
+        border-color:#2196F3;
+        outline: none;
+    }
 }
 
-
-
-.modal__textarea:focus{
-    border-color:#2196F3;
-    outline: none;
-}
 .chckbx-cont{
     width: 16px;
     height: 15px;

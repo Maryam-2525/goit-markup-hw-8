@@ -17,13 +17,15 @@
     transition-property:color, background-color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    &:hover,
+    &:focus{
+        background-color: darkblue;
+        color: yellow;
+    }
+
 }
 
-.hero__btn:hover,
-.hero__btn:focus{
-    background-color: darkblue;
-    color: yellow;
-}
+
 
 
 .footer-bttn{
@@ -64,13 +66,14 @@
     align-items: center;
     justify-content: center;
     transform: translatex(60%); 
- } 
-
-.form-bttn:hover,
-.form-bttn:focus{
+    &:hover,
+    &:focus{
     cursor: pointer;
     box-shadow:0px, 4px rgba(0, 0, 0, 0.15);
  }
+ } 
+
+
  .modal-bttn-close{
     width: 30px;
     height:30px;
@@ -84,20 +87,22 @@
 
     position: inherit;
     transform: translatex(1600%);
-}
-.modal-bttn-close:hover,
-.modal-bttn-close:focus {
+    &:hover,
+    &:focus {
     cursor: pointer;
     border-color: #2196F3;
     
 }
 
+}
+
 .modal-bttn-svg{
     fill: black;
-}
-.modal-bttn-svg:hover,
-.modal-bttn-svg:focus{
+    &:hover,
+    &:focus{
     fill: #2196F3;
+}
+
 }
 
 .portfolio-btn-item{
@@ -120,13 +125,14 @@
     transition-property:color, shadow, background-color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-.portfolio-btn-item:hover,
-.portfolio-btn-item:focus{
+    &:hover,
+    &:focus{
     background-color: $other-color;
     color: $white-color;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   
+}
+
 }
