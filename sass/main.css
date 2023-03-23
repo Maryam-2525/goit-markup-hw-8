@@ -33,15 +33,21 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*@media screen and (min-width: 480px) {
-      width: 480px
-  } 
-  @media screen and (min-width: 768px) {
-      width: 768px
-  } 
-  @media screen and (min-width: 1200px) {
-      width: 1200px
-  } */
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -539,8 +545,37 @@ ul {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .skills__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .skills__item {
+    width: 354px;
+  }
+  .skills__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .skills__item:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    width: 270px;
+  }
+  .skills__item:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .skills__item:nth-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 .features-rect-shape {
@@ -560,22 +595,34 @@ ul {
   color: #212121;
   margin-bottom: 9px;
 }
-
-/* .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+@media screen and (min-width: 768px) {
+  .skill__tittle {
+    text-align: left;
   }
+}
 
+.skills__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 
-.skills-hearder{
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*.skills-hearder{
     vertical-align: Center;
     font-style: normal;
     font-weight: 700;

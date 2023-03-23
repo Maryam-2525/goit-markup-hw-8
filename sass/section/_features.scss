@@ -10,10 +10,36 @@
     }
 }
 
+.skills__item{
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
 
-.skills__item:not(:last-child){
-    margin-bottom: 30px;
+    @media  screen and (min-width:768px) {
+        width: 354px;
+        &:nth-child(odd){
+            margin-right: 30px;
+        }
+        
+        &:nth-child(3){
+            margin-right: 0px;
+        }
+
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
+        &:nth-child(2){
+            margin-bottom: 30px;
+        }
+        
+        &:nth-child(-n + 2){
+            margin-bottom: 0;
+        }
+        
+    }
 }
+
+
 .features-rect-shape{
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -31,6 +57,10 @@
     color: $main-text-color;
     margin-bottom:9px ;
 
+    @media screen and (min-width:768px) {
+        text-align: left;
+        
+    }
 
 }
 .skills__text{
@@ -41,8 +71,7 @@
     color: $secondary-text-color;
 }
 
-/* .visually-hidden {
-    position: absolute;
+.visually-hidden {
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -55,7 +84,7 @@
   }
  
   
-.skills-hearder{
+/*.skills-hearder{
     vertical-align: Center;
     font-style: normal;
     font-weight: 700;
