@@ -1,6 +1,44 @@
 .skills-padding{
     padding-top: 60px;
-    
+
+}
+
+.skills{
+    @media  screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.skills__item:not(:last-child){
+    margin-bottom: 30px;
+}
+.features-rect-shape{
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.skill__tittle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em; 
+    color: $main-text-color;
+    margin-bottom:9px ;
+
+
+}
+.skills__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
 }
 
 /* .visually-hidden {

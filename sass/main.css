@@ -539,6 +539,28 @@ ul {
   padding-top: 60px;
 }
 
+.skills__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.features-rect-shape {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.skill__tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 9px;
+}
+
 /* .visually-hidden {
     position: absolute;
     width: 1px;
