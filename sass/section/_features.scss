@@ -1,4 +1,9 @@
-.visually-hidden {
+.skills-padding{
+    padding-top: 60px;
+    
+}
+
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -10,6 +15,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+ 
   
 .skills-hearder{
     vertical-align: Center;
@@ -18,7 +24,7 @@
     font-size: 36px;
     line-height: calc(42/36);
     letter-spacing: 0.03em;
-    color: var(--main-text-color);
+    color: $main-text-color;
 }
 
   
@@ -31,7 +37,7 @@
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em; 
-    color: var(--main-text-color);
+    color: $main-text-color;
     margin-bottom:9px ;
 }
 
@@ -40,7 +46,7 @@
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
 }
 
 .skills__item{
@@ -74,4 +80,5 @@
 
 .features-list-item:last-child{
     margin-left: 15px;
-}
+} */
+
