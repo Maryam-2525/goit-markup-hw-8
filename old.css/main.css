@@ -420,24 +420,12 @@ ul {
   margin-bottom: 20px;
 }
 
-.modal__textarea::-moz-placeholder {
-  font-family: "roboto";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.1716666667;
-  color: #757575;
-}
-
 .modal__textarea::placeholder {
   font-family: "roboto";
   font-size: 12px;
   font-weight: 400;
   line-height: 1.1716666667;
   color: #757575;
-}
-.modal__textarea::-moz-placeholder:focus {
-  border-color: #2196F3;
-  outline: none;
 }
 .modal__textarea::placeholder:focus {
   border-color: #2196F3;
@@ -616,8 +604,7 @@ ul {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1008,14 +995,6 @@ ul {
 .form__input:hover, .form__input:focus {
   outline: none;
   border-color: #2196F3;
-}
-
-.form__input::-moz-placeholder {
-  font-family: "roboto";
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .form__input::placeholder {
