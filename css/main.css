@@ -532,6 +532,56 @@ ul {
 .skills-padding {
   padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .skills-padding {
+    width: 270px;
+    padding-top: 94px;
+  }
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-rect-shape {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.skill__tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .skill__tittle {
+    text-align: left;
+  }
+}
+
+.skills__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 
 @media screen and (min-width: 768px) {
   .skills {
@@ -551,63 +601,79 @@ ul {
     margin-right: 30px;
   }
   .skills__item:nth-child(3) {
-    margin-right: 0px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .skills__item {
     width: 270px;
   }
-  .skills__item:nth-child(2) {
-    margin-bottom: 30px;
-  }
-  .skills__item:nth-child(-n+2) {
+  .skills__item:nth-child(n-2) {
     margin-bottom: 0;
   }
-}
-
-.features-rect-shape {
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  padding: 25px 0;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.skill__tittle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 9px;
-}
-@media screen and (min-width: 768px) {
-  .skill__tittle {
-    text-align: left;
+  .skills__item:nth-child(2) {
+    margin-right: 30px;
   }
 }
 
-.skills__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  color: #757575;
+/*.skills{
+    @media  screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.visually-hidden {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+
+
+    @media  screen and (min-width:768px) {
+        width: 354px;
+        &:nth-child(odd){
+            margin-right: 30px;
+        }
+
+        &:nth-child(3){
+            margin-right: 0px;
+        }
+
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
+        &:nth-child(2){
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(-n + 2){
+            margin-bottom: 0;
+        }
+
+    }
 }
+
+
+
+
+    margin-bottom:9px ;
+    @media screen and (min-width:768px) {
+        text-align: left;
+
+    }
+
+}
+
+
+
+
+  .features-rect-shape{
+    background-color: #F5F4FA;
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
 
 /*.skills-hearder{
     vertical-align: Center;
@@ -718,6 +784,10 @@ ul {
   margin-right: 30px;
 }
 
+.team-padding {
+  padding-top: 60px;
+}
+
 .team-header {
   text-align: center;
   font-style: normal;
@@ -733,18 +803,8 @@ ul {
   background-color: #F5F4FA;
 }
 
-.team {
-  display: flex;
-}
-
-.team__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
-}
-
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__des {
@@ -755,6 +815,7 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -767,16 +828,38 @@ ul {
   color: #757575;
   margin-bottom: 16px;
   text-align: center;
-}
-
-.team-smedia-svg {
-  fill: currentColor;
+  justify-content: center;
 }
 
 .team__icons {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-wrap: nowrap;
+  }
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.team-smedia-svg {
+  fill: currentColor;
 }
 
 .team__social:not(:last-child) {
